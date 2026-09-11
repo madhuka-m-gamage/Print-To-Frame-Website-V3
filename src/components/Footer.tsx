@@ -30,7 +30,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="max-w-md w-full">
           <div className="flex items-center gap-3 mb-2.5 sm:mb-3">
             <img
-              src="/logo-dark.png"
+              src={`${import.meta.env.BASE_URL}logo-dark.png`}
               alt="Print To Frame Logo"
               className="h-7 sm:h-9 w-auto object-contain"
             />

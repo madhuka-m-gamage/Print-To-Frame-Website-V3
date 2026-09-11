@@ -96,7 +96,7 @@ export default function Navbar({ activePage, onNavigate }: NavbarProps) {
           <div className="flex items-center justify-start flex-1">
             <a
               id="navbar-logo-link"
-              href="/"
+              href={import.meta.env.BASE_URL}
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('home');
@@ -105,7 +105,7 @@ export default function Navbar({ activePage, onNavigate }: NavbarProps) {
               className="flex items-center gap-2 group cursor-pointer liquid-glass px-2.5 sm:px-3.5 py-1.5 rounded-full hover:border-[#00daf3]/40 transition-all duration-300 shadow-lg"
             >
               <img
-                src="/logo-dark.png"
+                src={`${import.meta.env.BASE_URL}logo-dark.png`}
                 alt="Print To Frame Logo"
                 className="h-6 sm:h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
@@ -203,7 +203,7 @@ export default function Navbar({ activePage, onNavigate }: NavbarProps) {
               {/* Top brand info in mobile menu */}
               <div className="flex items-center justify-between pb-3 mb-1 border-b border-[#1e2838]">
                 <img
-                  src="/logo-dark.png"
+                  src={`${import.meta.env.BASE_URL}logo-dark.png`}
                   alt="Print To Frame Logo"
                   className="h-6 w-auto object-contain"
                 />
